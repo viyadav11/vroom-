@@ -1,0 +1,13 @@
+<h1 class="text-center text-info" ><a href=" /articles/new"> <button class="btn btn-primary btn-lg btn-block" type="button">Create</button></a></h1>
+
+<table style="width:100%" class="table table-dark" >
+  <% @articles.each do |article|%>
+  <tr>
+    <td><h3><%= article.title%></h3></td>
+    <td><a href="articles/<%=article.id%>"> <button class="btn btn-danger" type="button">Show</button></a></td>
+    <td> <%= button_to "Delete", { action: "destroy", id: article.id },
+                                method: :delete, data: { confirm: "Are you sure?" } %> </td>
+  </tr>
+ <%end%>
+</table>
+
