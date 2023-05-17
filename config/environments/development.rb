@@ -67,7 +67,7 @@ Rails.application.configure do
   #   address: 'smtp.gmail.com',
   #   port: 587,
   #   user_name: 'viyadav@bestpeers.com',
-  #   password: 'ihad xcke rzhu ivpy',
+  #   password: '',
   #   authentication: 'plain',
   #   enable_starttls_auto: true
   # }
